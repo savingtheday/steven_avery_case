@@ -6,6 +6,8 @@
 		<link rel="stylesheet" href="stylesheet.css" type="text/css">
 
 		<script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+		<link rel="stylesheet" href="gallery.css" />
+
 
 		
 		<!-- Latest compiled and minified CSS -->
@@ -26,8 +28,8 @@
 		<div class="col-md-12">
 			<nav class="navbar navbar-default navbar-fixed-top">
 				<ul class="nav nav-pills" id="navBar">
-					<li role="presentation" class="active"><a href="index.html">Home</a></li>
-					<li role="presentation"><a href="files.html">Files</a></li>
+					<li role="presentation"><a href="index.html">Home</a></li>
+					<li role="presentation" class="active"><a href="files.html">Files</a></li>
 					<li role="presentation"><a href="http://fundanything.com/en/campaigns/help-us-get-the-steven-avery-trial-transcripts">Donate</a></li>
 					<li role="presentation"><a href="contact.html">Contact</a></li>
 					<li role="presentation"><a href="links.html">Links</a></li>
@@ -44,44 +46,82 @@
 		</div>
 	
 
-
-
 		<div class="row">
-			<div class="col-md-6">
+			<div class="col-md-12">
 				<div id="mainTitle">
 					STEVEN AVERY TRIAL 
 					<br>
 					TRANSCRIPTS AND DOCUMENTS
 				</div>
 			</div>
-			<div class="col-md-6">
-				<div class="jumbotron mainJumbo">
-				  <h1>Help us get the documents</h1>
-				  <p></p>
-				  <p><a class="btn btn-primary btn-lg" href="http://fundanything.com/en/campaigns/help-us-get-the-steven-avery-trial-transcripts" role="button">Donate</a></p>
-				</div>			
+		</div>
+		<div class="row">
+			<div class="col-md-12 directory">
+				<ol class="breadcrumb">
+				  <li><a href="../index.html">Home</a></li>
+				  <li><a href="../files.html">Files</a></li>
+				  <li><a href="#">Photos</a></li>
+				</ol>
 			</div>
 		</div>	
-
+		
 		<div class="row">
 			<div class="col-md-2">
 			</div>
 			<div class="col-md-8">
-				<p>
-					<span class="lead">Given the wide-spread interest in the Steven Avery case and the questions and concerns raised in the Netflix series Making a Murderer, we are raising money in order to purchase copies of the Avery trial transcripts and case file documents, and to publish them online for free public access.  Copies of these documents can be obtained from the Manitowoc County Circuit Court, however there are copy fees of $1.25 per page for the case file documents and $0.50 per page for the trial transcripts. </span>
-				</p>
-				<p>
-					<span class="lead">100% of the money will be used to purchase copies of the transcripts and case files, to digitize the documents that are only available in hard-copy format, and to publish all of the materials online for free public access.  Any funds raised in excess of the stretch goals will be donated directly to the Innocence Project. </span>
-				</p>
+				<div class="description">
+					<span class="lead">Photos</span>
+				</div>
 			</div>
 			<div class="col-md-2">
+			</div>
+		</div>						
+		<div class="row">		
+			<div class="col-md-3">
+			</div>
+			<div class="col-md-6">
+				<div id="mygallery">
+				    <a href="images/01.jpg">
+				        <img alt="Overview of Avery residence" src="images/01.jpg"/>
+				    </a>
+				    <a href="images/02.jpg">
+				        <img alt="Steven Avery's bedroom" src="images/02.jpg"/>
+				    </a>
+				    <a href="images/03.jpg">
+				        <img alt="Steven Avery's bedroom" src="images/03.jpg"/>
+				    </a>
+				    <a href="images/04.jpg">
+				        <img alt="Steven Avery's bedroom" src="images/04.jpg"/>
+				    </a>
+				    <a href="images/05.jpg">
+				        <img alt="Steven Avery's bedroom" src="images/05.jpg"/>
+				    </a>
+				    <a href="images/06.jpg">
+				        <img alt="Steven Avery's bedroom" src="images/06.jpg"/>
+				    </a>
+				    <a href="images/07.jpg">
+				        <img alt="Steven Avery's bedroom" src="images/07.jpg"/>
+				    </a>
+				    <a href="images/08.jpg">
+				        <img alt="Steven Avery's bedroom" src="images/08.jpg"/>
+				    </a>
+				    <a href="images/09.jpg">
+				        <img alt="Steven Avery's bedroom" src="images/09.jpg"/>
+				    </a>					    
+				    <!-- other images... -->
+				</div>
+			</div>
+			<div class="col-md-3">
 			</div>
 		</div>
 
 
 	</div>
 	
-
+		<script src="gallery.js"></script>
+		<script>
+			$("#mygallery").justifiedGallery();
+			</script>
 
 
 </body>

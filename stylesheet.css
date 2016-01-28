@@ -43,6 +43,19 @@ body{
 	margin-bottom: 10px;
 }
 
+
+.mainJumbo{
+	padding-top: 100px;
+	height: 300px;
+	color: white;
+	background: url('http://www.thewrap.com/wp-content/uploads/2016/01/makingamurderer1.jpg');
+}
+
+
+.mainJumbo h1{
+	color: white;
+}
+
 .description{
 	margin-bottom: 30px;
 	margin-top: 50px;
