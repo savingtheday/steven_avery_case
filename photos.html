@@ -6,7 +6,7 @@
 		<link rel="stylesheet" href="stylesheet.css" type="text/css">
 
 		<script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
-		<link rel="stylesheet" href="gallery.css" />
+		<link rel="stylesheet" href="gallery.css" type="text/css" />
 
 
 		
@@ -58,8 +58,8 @@
 		<div class="row">
 			<div class="col-md-12 directory">
 				<ol class="breadcrumb">
-				  <li><a href="../index.html">Home</a></li>
-				  <li><a href="../files.html">Files</a></li>
+				  <li><a href="index.html">Home</a></li>
+				  <li><a href="files.html">Files</a></li>
 				  <li><a href="#">Photos</a></li>
 				</ol>
 			</div>
@@ -77,51 +77,51 @@
 			</div>
 		</div>						
 		<div class="row">		
-			<div class="col-md-3">
+			<div class="col-md-1">
 			</div>
-			<div class="col-md-6">
-				<div id="mygallery">
-				    <a href="images/01.jpg">
-				        <img alt="Overview of Avery residence" src="images/01.jpg"/>
-				    </a>
-				    <a href="images/02.jpg">
-				        <img alt="Steven Avery's bedroom" src="images/02.jpg"/>
-				    </a>
-				    <a href="images/03.jpg">
-				        <img alt="Steven Avery's bedroom" src="images/03.jpg"/>
-				    </a>
-				    <a href="images/04.jpg">
-				        <img alt="Steven Avery's bedroom" src="images/04.jpg"/>
-				    </a>
-				    <a href="images/05.jpg">
-				        <img alt="Steven Avery's bedroom" src="images/05.jpg"/>
-				    </a>
-				    <a href="images/06.jpg">
-				        <img alt="Steven Avery's bedroom" src="images/06.jpg"/>
-				    </a>
-				    <a href="images/07.jpg">
-				        <img alt="Steven Avery's bedroom" src="images/07.jpg"/>
-				    </a>
-				    <a href="images/08.jpg">
-				        <img alt="Steven Avery's bedroom" src="images/08.jpg"/>
-				    </a>
-				    <a href="images/09.jpg">
-				        <img alt="Steven Avery's bedroom" src="images/09.jpg"/>
-				    </a>					    
-				    <!-- other images... -->
+			<div class="col-md-10">
+				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+				  <!-- Indicators -->
+				  <ol class="carousel-indicators">
+				    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+				    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+				    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+				  </ol>
+
+				  <!-- Wrapper for slides -->
+				  <div class="carousel-inner" role="listbox">
+				    <div class="item active">
+				      <img src="images/01.jpg" alt="Overview of Avery residence">
+				      <div class="carousel-caption">
+				        Overview of Avery residence
+				      </div>
+				    </div>
+				    <div class="item">
+				      <img src="images/02.jpg" alt="Overview of Avery residence">
+				      <div class="carousel-caption">
+				        Overview of Avery residence
+				      </div>
+				    </div>				    
+				  </div>
+
+				  <!-- Controls -->
+				  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+				    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				    <span class="sr-only">Previous</span>
+				  </a>
+				  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+				    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				    <span class="sr-only">Next</span>
+				  </a>
 				</div>
 			</div>
-			<div class="col-md-3">
+			<div class="col-md-1">
 			</div>
 		</div>
 
-
 	</div>
 	
-		<script src="gallery.js"></script>
-		<script>
-			$("#mygallery").justifiedGallery();
-			</script>
+
 
 
 </body>
