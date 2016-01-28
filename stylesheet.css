@@ -1,0 +1,87 @@
+body{
+	font-family: verdana;
+	color: #1a3043;
+	font-size: 18px;
+}
+
+#wrapper{
+	width: 100%;
+}
+
+/*#navBar{
+	width: 95%;
+	height: 60px;
+	background: #1a3043;
+	text-align: center;
+	padding-top: 5px;
+	position: fixed;
+}*/
+
+#navBar{
+	display: inline-block;
+	padding-top: 0;
+}
+
+#searching{
+	margin-right: 10px; 
+}
+
+.nav-pills{
+	font-size: 20px;
+
+}
+
+.mediaIcon{
+	padding: 10px;
+}
+
+
+#mainTitle{
+	padding-top: 100px;
+	font-size: 40px;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+
+.mainJumbo{
+	padding-top: 100px;
+	height: 300px;
+	color: white;
+	background: url('http://www.thewrap.com/wp-content/uploads/2016/01/makingamurderer1.jpg');
+}
+
+
+.mainJumbo h1{
+	color: white;
+}
+
+.description{
+	margin-bottom: 30px;
+	margin-top: 50px;
+	text-align: center;
+}
+
+.directory{
+	height: 15px;
+	width: 100%;
+}
+
+
+
+
+.donateButton{
+	right: 0;
+	font-size: 30px;
+}
+
+
+.list-group{
+	padding-bottom: 30px;
+}
+
+.tableHeader{
+	font-size: 25px;
+	background-color: #1a3043;
+	color: white;
+}
