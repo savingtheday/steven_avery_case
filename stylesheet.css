@@ -85,3 +85,8 @@ body{
 	background-color: #1a3043;
 	color: white;
 }
+
+#zoey {
+	float: left;
+	padding: 10px;
+}
