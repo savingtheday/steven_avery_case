@@ -4,8 +4,11 @@
 	<title>Steven Avery Trial Transcrips</title>
 		<meta charset="UTF-8">
 		<link rel="stylesheet" href="stylesheet.css" type="text/css">
+		<link rel="stylesheet" href="gallery/main.css" type="text/css">
 
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="gallery/jquery.photoset-grid.js"></script>
+
 
 		
 		<!-- Latest compiled and minified CSS -->
@@ -26,8 +29,8 @@
 		<div class="col-md-12">
 			<nav class="navbar navbar-default navbar-fixed-top">
 				<ul class="nav nav-pills" id="navBar">
-					<li role="presentation" class="active"><a href="index.html">Home</a></li>
-					<li role="presentation"><a href="files.html">Files</a></li>
+					<li role="presentation"><a href="index.html">Home</a></li>
+					<li role="presentation" class="active"><a href="files.html">Files</a></li>
 					<li role="presentation"><a href="http://fundanything.com/en/campaigns/help-us-get-the-steven-avery-trial-transcripts">Donate</a></li>
 					<li role="presentation"><a href="contact.html">Contact</a></li>
 					<li role="presentation"><a href="links.html">Links</a></li>
@@ -44,45 +47,83 @@
 		</div>
 	
 
-
-
 		<div class="row">
-			<div class="col-md-6">
+			<div class="col-md-12">
 				<div id="mainTitle">
 					STEVEN AVERY TRIAL 
 					<br>
 					TRANSCRIPTS AND DOCUMENTS
 				</div>
 			</div>
-			<div class="col-md-6">
-				<div class="jumbotron mainJumbo">
-				  <h1><span class="donateText">Donate</span></h1>
-				  <p></p>
-				  <p><a class="btn btn-primary btn-lg" href="http://fundanything.com/en/campaigns/help-us-get-the-steven-avery-trial-transcripts" role="button">Click here</a></p>
-				</div>			
+		</div>
+		<div class="row">
+			<div class="col-md-12 directory">
+				<ol class="breadcrumb">
+				  <li><a href="index.html">Home</a></li>
+				  <li><a href="files.html">Files</a></li>
+				  <li><a href="#">Photos</a></li>
+				</ol>
 			</div>
 		</div>	
-
+		
 		<div class="row">
 			<div class="col-md-2">
 			</div>
 			<div class="col-md-8">
-				<p>
-					<span class="lead">Given the wide-spread interest in the Steven Avery case and the questions and concerns raised in the Netflix series Making a Murderer, we are raising money in order to purchase copies of the Avery trial transcripts and case file documents, and to publish them online for free public access.  Copies of these documents can be obtained from the Manitowoc County Circuit Court, however there are copy fees of $1.25 per page for the case file documents and $0.50 per page for the trial transcripts. </span>
-				</p>
-				<p>
-					<span class="lead">100% of the money will be used to purchase copies of the transcripts and case files, to digitize the documents that are only available in hard-copy format, and to publish all of the materials online for free public access.  Any funds raised in excess of the stretch goals will be donated directly to the Innocence Project. </span>
-				</p>
+				<div class="description">
+					<span class="lead">Photos</span>
+				</div>
 			</div>
 			<div class="col-md-2">
 			</div>
-		</div>
+		</div>						
+		<div class="row">		
+			<div class="col-md-1">
+			</div>
+			<div class="col-md-10">
+	
+				<div class="photoset-grid-custom" style="visibility: hidden;">
+  					<img src="images/01.jpg" data-highres="images/01.jpg">
+					<img src="images/02.jpg" data-highres="images/02.jpg">
+					<img src="images/03.jpg" data-highres="images/03.jpg">
+					<img src="images/04.jpg" data-highres="images/04.jpg">
+  					<img src="images/05.jpg" data-highres="images/05.jpg">
+					<img src="images/06.jpg" data-highres="images/06.jpg">
+					<img src="images/07.jpg" data-highres="images/07.jpg">
+					<img src="images/08.jpg" data-highres="images/08.jpg">					
+				</div>
 
+			</div>
+			<div class="col-md-1">
+			</div>
+		</div>
 
 	</div>
 	
 
+	<script>
+		//$(document).ready(function(){
+		
+			
+		$('.photoset-grid-custom').photosetGrid({
+		  // Set the gutter between columns and rows
+		  gutter: '5px',
+		  // Manually set the grid layout
+		  layout: '3',
+		  // Wrap the images in links
+		  highresLinks: true,
+		  // Asign a common rel attribute
+		  rel: 'print-gallery',
 
+		  onInit: function(){},
+		  onComplete: function(){
+		    // Show the grid after it renders
+		    $('.photoset-grid-custom').attr('style', '');
+		  }
+		});
+		
+
+	</script>
 
 </body>
 </html>
