@@ -17,13 +17,12 @@ body{
 	position: fixed;
 }*/
 
-#navBar{
-	display: inline-block;
-	padding-top: 0;
+.navColor{
+	background-color: white;
 }
 
 #searching{
-	margin-right: 10px; 
+	margin-right: 10px;
 }
 
 .nav-pills{
