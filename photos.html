@@ -5,10 +5,11 @@
 		<meta charset="UTF-8">
 		<link rel="stylesheet" href="stylesheet.css" type="text/css">
 		<link rel="stylesheet" href="gallery/jquery.bxslider.min.css" type="text/css">
+		<link rel="stylesheet" href="lightbox.css" type="text/css">
 
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 		<script src="gallery/jquery.bxslider.min.js"></script>
-
+		  <script type="text/javascript" src="lightbox.js"></script>
 
 
 		<!-- Latest compiled and minified CSS -->
@@ -125,7 +126,7 @@
 			</div>
 			<div class="col-md-10">
 				<ul class="bxslider">
-				  <li><a href="images/a.jpg" target="_blank"><img src="images/a.jpg" alt="Halbach's RAV4" /></a></li>
+				  <li><a href="#" data-img-url="images/a.jpg" class="lightbox-link"><img src="images/a.jpg" alt="Halbach's RAV4" /></a></li>
 				  <li><a href="images/b.jpg" target="_blank"><img src="images/b.jpg" alt="Halbach's RAV4" /></a></li>
 				  <li><a href="images/c.jpg" target="_blank"><img src="images/c.jpg" alt="Halbach's RAV4"/></a></li>
 				  <li><a href="images/d.jpg" target="_blank"><img src="images/d.jpg" alt="Halbach's RAV4" /></a></li>
@@ -138,6 +139,11 @@
 		</div>
 	</div>
 
+	<!-- lightbox -->
+<div id="#lightbox-outer">
+  <div id="#lightbox-inner">
+    <img src="" id="lightbox-image">
+  </div>
 
 	<script>
 		$(document).ready(function(){
